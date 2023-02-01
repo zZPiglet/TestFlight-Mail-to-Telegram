@@ -1,0 +1,12 @@
+{
+  "name": "testflight-mail-to-telegram",
+  "version": "0.0.0",
+  "devDependencies": {
+    "wrangler": "2.8.0"
+  },
+  "private": true,
+  "dependencies": {
+    "html-to-text": "^9.0.3",
+    "postal-mime": "^1.0.13"
+  }
+}
