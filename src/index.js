@@ -48,7 +48,7 @@ export default {
                 async (id) =>
                     await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
                         method: "POST",
-                        body: `chat_id=${id}&text=${encodeURIComponent(text)}&parse_mode=Markdown`,
+                        body: `chat_id=${id}&text=${encodeURIComponent(text)}`,
                         headers: {
                             "Content-Type": "application/x-www-form-urlencoded",
                         },
