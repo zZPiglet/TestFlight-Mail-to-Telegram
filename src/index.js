@@ -38,7 +38,7 @@ export default {
                 ],
             })
         ); // What to Test:
-        let changelog = decodeURIComponent(convert(preElements)); // TestFlight Changelog
+        let changelog = decodeURIComponent(convert(preElements).replace(/%(?![0-9A-Fa-f]{2})/g, "%25")); // TestFlight Changelog
         let token = env.TG_BOT_TOKEN;
         let ids = env.TG_SEND_IDS.split(",");
         let text = `${h1Text}\n\n${h2Text}\n\n${changelog}`;
